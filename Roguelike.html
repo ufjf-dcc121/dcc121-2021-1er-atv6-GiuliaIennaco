@@ -488,6 +488,8 @@
             celulas[i].addEventListener('click', event =>{
                 let classe = celulas[i].className;
 
+                console.log(celulas[i].className);
+
                 switch(classe){
                     case 'parede':
                         celulas[i].className = '';
@@ -507,7 +509,7 @@
                          break;
                 }
 
-                console.log(classe);
+                console.log(celulas[i].className);
             })
         }
     </script>
