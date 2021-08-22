@@ -487,6 +487,22 @@
 
             celulas[i].addEventListener('click', event =>{
                 let classe = celulas[i].className;
+
+                switch(classe){
+                    case 'parede':
+                        celulas[i].className = ''
+                         break;
+                    case '':
+                        celulas[i].className = 'orc'
+                        break;
+                    case 'orc':
+                        celulas[i].className = 'tesouro' 
+                        break;
+                    case 'tesouro':
+                        celulas[i].className = 'parede'
+                         break;
+                }
+
                 console.log(classe);
             })
         }
