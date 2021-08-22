@@ -490,16 +490,20 @@
 
                 switch(classe){
                     case 'parede':
-                        celulas[i].className = ''
+                        celulas[i].className = '';
+                        celulas[i].innerHTML = '';
                          break;
                     case '':
-                        celulas[i].className = 'orc'
+                        celulas[i].className = 'orc';
+                        celulas[i].innerHTML = 'O';
                         break;
                     case 'orc':
-                        celulas[i].className = 'tesouro' 
+                        celulas[i].className = 'tesouro';
+                        celulas[i].innerHTML = 'D';
                         break;
                     case 'tesouro':
-                        celulas[i].className = 'parede'
+                        celulas[i].className = 'parede';
+                        celulas[i].innerHTML = '';
                          break;
                 }
 
