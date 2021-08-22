@@ -480,11 +480,14 @@
         const celulas = document.querySelectorAll("td");
         var i;
         console.log(celulas);
-        for (i = 0; i<celulas.length-1; i++){
+        for (let i = 0; i<celulas.length-1; i++){
             if(!celulas[i].className){
                 celulas[i].classList.add('parede');                
             }
 
+            celulas[i].addEventListener('click', event =>{
+                console.log("clicou");
+            })
         }
     </script>
 </body>
